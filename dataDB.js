@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 module.exports = {add_case_data};
 
-mongoose.connect('mongodb://ec2-3-142-225-181.us-east-2.compute.amazonaws.com:27017/testrssi');
+mongoose.connect('mongodb://WGNW:waganaw@aec2-3-142-225-181.us-east-2.compute.amazonaws.com:27017/admin',{ dbName: 'WIFIRSSI'});
 var db = mongoose.connection;
 
 db.on('error', function(){
